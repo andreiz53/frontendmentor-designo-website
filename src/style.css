@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*,
+*::before,
+*::after {
+  @apply font-jost;
+}
+h1 {
+  @apply text-5xl font-medium leading-none;
+}
+h2 {
+  @apply text-[40px] font-medium leading-tight tracking-[2px];
+}
+h3 {
+  @apply text-xl font-medium leading-tight tracking-[5px];
+}
+body,
+p {
+  @apply text-base font-normal leading-[26px];
+}
