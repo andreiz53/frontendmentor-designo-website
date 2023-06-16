@@ -11,11 +11,14 @@ export default {
         'primary-light': '#FFAD9B',
         'white': '#FFFFFF',
         'black': '#1D1C1E',
-        'neutral-100': '#F1F3F5DB',
-        'neutral-900': '#333136'
+        'light': '#F1F3F5DB',
+        'dark': '#333136'
       },
       fontFamily: {
         'jost': ['Jost', 'sans-serif']
+      },
+      maxWidth: {
+        'm': "1100px"
       }
     },
   },
