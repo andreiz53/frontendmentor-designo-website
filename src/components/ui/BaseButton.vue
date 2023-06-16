@@ -15,4 +15,7 @@ button {
 .white {
   @apply bg-white text-dark;
 }
+.primary {
+  @apply bg-primary text-white;
+}
 </style>
