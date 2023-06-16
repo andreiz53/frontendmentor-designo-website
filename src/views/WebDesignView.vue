@@ -1,5 +1,6 @@
 <script setup lang="ts"></script>
-
 <template>
-  <router-view></router-view>
+  <div>Web design page</div>
 </template>
+
+<style scoped></style>
