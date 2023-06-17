@@ -6,21 +6,23 @@ import BaseButton from '../ui/BaseButton.vue';
   <div class="locations-row">
     <div class="canada">
       <div class="img-container">
-        <img src="../assets/shared/desktop/illustration-canada.svg" />
+        <img src="../../assets/shared/desktop/illustration-canada.svg" />
       </div>
       <h3>Canada</h3>
       <BaseButton theme="primary">See location</BaseButton>
     </div>
     <div class="australia">
       <div class="img-container">
-        <img src="../assets/shared/desktop/illustration-australia.svg" />
+        <img src="../../assets/shared/desktop/illustration-australia.svg" />
       </div>
       <h3>Australia</h3>
       <BaseButton theme="primary">See location</BaseButton>
     </div>
     <div class="uk">
       <div class="img-container">
-        <img src="../assets/shared/desktop/illustration-united-kingdom.svg" />
+        <img
+          src="../../assets/shared/desktop/illustration-united-kingdom.svg"
+        />
       </div>
       <h3>United Kingdom</h3>
       <BaseButton theme="primary">See location</BaseButton>

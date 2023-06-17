@@ -1,9 +1,12 @@
 /** @type {import('tailwindcss').Config} */
+const FormKitVariants = require('@formkit/themes/tailwindcss')
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,vue,tsx}",
+    "./src/**/*.{html,js,ts,vue,tsx}",
+    './node_modules/@formkit/themes/dist/tailwindcss/genesis/index.cjs',
   ],
+  plugins: [FormKitVariants],
   theme: {
     extend: {
       colors: {
