@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import TextImageRow from '../components/TextImageRow.vue';
-import LocationsRow from '../components/LocationsRow.vue';
+import LocationsRow from '../components/locations/LocationsRow.vue';
 </script>
 
 <template>
