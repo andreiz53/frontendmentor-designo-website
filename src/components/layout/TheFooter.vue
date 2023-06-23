@@ -18,18 +18,20 @@ import IconInstagram from '../icons/IconInstagram.vue';
           </p>
         </div>
         <div class="right-col">
-          <BaseButton theme="white">Get in touch</BaseButton>
+          <BaseButton theme="white" to="contact">Get in touch</BaseButton>
         </div>
       </div>
     </section>
     <section class="footer-section">
       <div class="footer-main-row">
         <div class="left-col">
-          <img
-            src="../../assets/shared/desktop/logo-light.png"
-            alt="logo light"
-            class="footer-logo"
-          />
+          <router-link to="/">
+            <img
+              src="../../assets/shared/desktop/logo-light.png"
+              alt="logo light"
+              class="footer-logo"
+            />
+          </router-link>
         </div>
         <div class="right-col">
           <nav>
@@ -52,27 +54,43 @@ import IconInstagram from '../icons/IconInstagram.vue';
           <div class="address">
             <p><b>Designo Central Office</b></p>
             <p>
-              3886 Wellington Street<br />
-              Toronto, Ontario M9C 3J5
+              <a href="https://goo.gl/maps/baHgKYJkVJjEMa1Q7" target="_blank"
+                >3886 Wellington Street<br />
+                Toronto, Ontario M9C 3J5</a
+              >
             </p>
           </div>
         </div>
         <div class="contact-col">
           <p><b>Contact Us (Central Office)</b></p>
           <p>
-            <b>
-              P : +1 253-863-8967 <br />
-              M : contact@designo.co
-            </b>
+            <a href="tel:+12538638967">P : +1 253-863-8967</a> <br />
+            <a href="mailto:contact@designo.co">M : contact@designo.co</a>
           </p>
         </div>
         <div class="social-col">
           <ul class="social-list">
-            <li class="social-list-item"><IconFacebook /></li>
-            <li class="social-list-item"><IconYoutube /></li>
-            <li class="social-list-item"><IconTwitter /></li>
-            <li class="social-list-item"><IconPinterest /></li>
-            <li class="social-list-item"><IconInstagram /></li>
+            <li class="social-list-item">
+              <a target="_blank" href="https://facebook.com"
+                ><IconFacebook
+              /></a>
+            </li>
+            <li class="social-list-item">
+              <a target="_blank" href="https://youtube.com"><IconYoutube /></a>
+            </li>
+            <li class="social-list-item">
+              <a target="_blank" href="https://twitter.com"><IconTwitter /></a>
+            </li>
+            <li class="social-list-item">
+              <a target="_blank" href="https://pinterest.com"
+                ><IconPinterest
+              /></a>
+            </li>
+            <li class="social-list-item">
+              <a target="_blank" href="https://instagram.com"
+                ><IconInstagram
+              /></a>
+            </li>
           </ul>
         </div>
       </div>
@@ -126,5 +144,8 @@ footer {
 }
 .social-list {
   @apply flex gap-4 items-center;
+}
+.footer-pages > li > a:hover {
+  @apply underline;
 }
 </style>

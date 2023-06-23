@@ -1,21 +1,27 @@
 <script setup lang="ts">
-defineProps(['theme']);
+defineProps(['theme', 'target', 'anchor']);
 </script>
 
 <template>
-  <button :class="theme">
+  <router-link :class="theme" :to="{ name: target }" class="button">
     <slot></slot>
-  </button>
+  </router-link>
 </template>
 
 <style scoped>
-button {
-  @apply text-sm font-medium leading-5 tracking-[1px] uppercase  px-4 py-5  rounded-lg;
+.button {
+  @apply text-sm font-medium leading-5 tracking-[1px] uppercase  px-4 py-5  rounded-lg duration-300;
 }
 .white {
   @apply bg-white text-dark;
 }
+.white:hover {
+  @apply text-primary shadow-2xl;
+}
 .primary {
-  @apply bg-primary text-white;
+  @apply bg-primary text-white border-solid border-2 border-primary transition;
+}
+.primary:hover {
+  @apply bg-transparent text-primary;
 }
 </style>

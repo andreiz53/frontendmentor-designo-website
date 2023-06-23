@@ -11,7 +11,7 @@ import BaseButton from '../ui/BaseButton.vue';
         responsive websites, app design, and engaging brand experiences. Find
         out more about our services.
       </p>
-      <BaseButton theme="white">Learn more</BaseButton>
+      <BaseButton theme="white" target="about">Learn more</BaseButton>
     </div>
     <div class="bg-container"></div>
   </div>

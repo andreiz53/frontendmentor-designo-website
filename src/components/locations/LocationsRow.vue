@@ -9,14 +9,14 @@ import BaseButton from '../ui/BaseButton.vue';
         <img src="../../assets/shared/desktop/illustration-canada.svg" />
       </div>
       <h3>Canada</h3>
-      <BaseButton theme="primary">See location</BaseButton>
+      <BaseButton theme="primary" to="locations">See location</BaseButton>
     </div>
     <div class="australia">
       <div class="img-container">
         <img src="../../assets/shared/desktop/illustration-australia.svg" />
       </div>
       <h3>Australia</h3>
-      <BaseButton theme="primary">See location</BaseButton>
+      <BaseButton theme="primary" to="locations">See location</BaseButton>
     </div>
     <div class="uk">
       <div class="img-container">
@@ -25,7 +25,7 @@ import BaseButton from '../ui/BaseButton.vue';
         />
       </div>
       <h3>United Kingdom</h3>
-      <BaseButton theme="primary">See location</BaseButton>
+      <BaseButton theme="primary" to="locations">See location</BaseButton>
     </div>
   </div>
 </template>
@@ -81,7 +81,7 @@ h3 {
 .locations-row h3 {
   @apply text-center mb-8;
 }
-.locations-row button {
+.locations-row a {
   @apply block w-fit mx-auto;
 }
 </style>
