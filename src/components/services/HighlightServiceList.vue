@@ -48,15 +48,17 @@ function getUrl(service: string) {
 .left-col::before,
 .right-top::before,
 .right-bottom::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: inherit;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 0;
+  @apply content-[''] absolute top-0 left-0 w-full h-full rounded-2xl bg-black bg-opacity-50 z-0 duration-300;
+}
+.left-col:hover::before,
+.right-top:hover::before,
+.right-bottom:hover::before {
+  @apply bg-primary bg-opacity-80;
+}
+.left-col:hover a::after,
+.right-top:hover a::after,
+.right-bottom:hover a::after {
+  @apply border-r-white border-t-white;
 }
 .right-col {
   @apply grid grid-rows-2 gap-y-6;

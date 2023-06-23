@@ -16,7 +16,7 @@ defineProps(['theme', 'target', 'anchor']);
   @apply bg-white text-dark;
 }
 .white:hover {
-  @apply text-primary shadow-2xl;
+  @apply bg-primary-light text-white;
 }
 .primary {
   @apply bg-primary text-white border-solid border-2 border-primary transition;

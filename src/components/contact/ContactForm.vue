@@ -9,6 +9,7 @@
         name="name"
         id="name"
         validation="required"
+        :validation-messages="{ required: 'Can`t be empty' }"
       />
       <FormKit
         type="email"
@@ -16,6 +17,7 @@
         name="email"
         id="email"
         validation="required|email"
+        :validation-messages="{ required: 'Can`t be empty' }"
       />
       <FormKit
         type="number"
@@ -23,6 +25,7 @@
         id="phone"
         name="phone"
         validation="required"
+        :validation-messages="{ required: 'Can`t be empty' }"
       />
       <FormKit
         type="textarea"
@@ -30,6 +33,7 @@
         validation="required"
         name="message"
         id="message"
+        :validation-messages="{ required: 'Can`t be empty' }"
       />
     </FormKit>
   </div>
@@ -53,7 +57,7 @@ textarea.formkit-input {
   py-4 px-12 uppercase mt-6 block ml-auto duration-300;
 }
 .formkit-input[type='submit']:hover {
-  @apply text-primary shadow-2xl;
+  @apply bg-primary-light text-white;
 }
 .formkit-input:focus-visible {
   @apply outline-none border-opacity-100;
@@ -62,6 +66,15 @@ textarea.formkit-input {
   @apply opacity-100;
 }
 .formkit-message {
-  @apply italic mt-2 opacity-80 text-sm;
+  @apply italic text-sm flex items-center gap-2;
+}
+.formkit-outer {
+  @apply relative;
+}
+.formkit-messages {
+  @apply absolute right-0 top-0 h-full flex items-center;
+}
+.formkit-message::after {
+  @apply content-['!'] font-bold w-4 aspect-square bg-white text-primary flex justify-center items-center rounded-full leading-none;
 }
 </style>

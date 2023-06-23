@@ -148,4 +148,10 @@ footer {
 .footer-pages > li > a:hover {
   @apply underline;
 }
+.social-list-item svg {
+  @apply duration-300;
+}
+.social-list-item:hover svg {
+  @apply brightness-125;
+}
 </style>
