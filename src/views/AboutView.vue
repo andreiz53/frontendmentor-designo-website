@@ -88,7 +88,7 @@ import LocationsRow from '../components/locations/LocationsRow.vue';
 .about-talent-section,
 .about-locations-section,
 .about-deal-section {
-  @apply pb-40;
+  @apply pb-40 px-6;
 }
 .full-image {
   @apply h-full object-cover;

@@ -16,3 +16,9 @@ import TheFooter from './components/layout/TheFooter.vue';
     </div>
   </div>
 </template>
+
+<style scoped>
+#page-container {
+  @apply overflow-hidden;
+}
+</style>

@@ -32,7 +32,7 @@ import BaseButton from '../ui/BaseButton.vue';
 
 <style scoped>
 .locations-row {
-  @apply grid grid-cols-[350px_350px_350px] justify-between max-w-m mx-auto;
+  @apply grid lg:grid-cols-3 xl:grid-cols-[350px_350px_350px] justify-between max-w-m mx-auto;
 }
 h3 {
   @apply uppercase;

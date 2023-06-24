@@ -22,14 +22,12 @@ import HighlightServiceList from '../components/services/HighlightServiceList.vu
 .home-hero-section,
 .home-services-section,
 .home-features-section {
-  @apply pb-40 relative;
+  @apply pb-40 px-6 relative;
 }
 .home-hero-section::after {
-  @apply bg-light absolute w-[70%] aspect-[1.69/1] left-0 top-[40%] -z-10 rounded-tl-[300px] rounded-tr-[300px] rounded-br-[300px];
-  content: '';
+  @apply content-[''] bg-light absolute w-[70%] aspect-[1.69/1] left-0 top-[40%] -z-10 rounded-tl-[300px] rounded-tr-[300px] rounded-br-[300px];
 }
 .home-features-section::after {
-  @apply bg-light absolute w-[70%] aspect-[1.69/1] right-0 top-[20%] -z-10 rounded-tl-[300px] rounded-bl-[300px] rounded-br-[300px];
-  content: '';
+  @apply content-[''] bg-light absolute w-[70%] aspect-[1.69/1] right-0 top-[20%] -z-10 rounded-tl-[300px] rounded-bl-[300px] rounded-br-[300px];
 }
 </style>

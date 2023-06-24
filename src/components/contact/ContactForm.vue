@@ -17,7 +17,10 @@
         name="email"
         id="email"
         validation="required|email"
-        :validation-messages="{ required: 'Can`t be empty' }"
+        :validation-messages="{
+          required: 'Can`t be empty',
+          email: 'Use a valid email',
+        }"
       />
       <FormKit
         type="number"

@@ -60,7 +60,7 @@ const features = [
 .graphic-design-hero,
 .graphic-design-features,
 .graphic-design-services {
-  @apply pb-40 relative;
+  @apply pb-40 relative px-6;
 }
 
 .graphic-design-hero::before {

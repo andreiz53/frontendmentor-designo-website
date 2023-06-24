@@ -80,7 +80,7 @@ import LocationSingle from '../components/locations/LocationSingle.vue';
 
 <style scoped>
 .locations-section {
-  @apply grid gap-8 pb-40;
+  @apply grid gap-8 pb-40 px-6;
 }
 .title {
   @apply text-primary;

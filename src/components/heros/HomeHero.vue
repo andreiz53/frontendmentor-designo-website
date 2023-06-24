@@ -19,21 +19,20 @@ import BaseButton from '../ui/BaseButton.vue';
 
 <style scoped>
 .home-hero-row {
-  @apply bg-primary rounded-2xl max-w-m mx-auto text-white px-24 py-36 relative;
+  @apply bg-primary rounded-2xl max-w-m mx-auto text-white px-5 pt-8 lg:px-24 lg:py-36 relative;
   background-image: url('../../assets/home/desktop/bg-pattern-hero-home.svg');
   background-position: right center;
   background-size: 57% 100%;
   background-repeat: no-repeat;
 }
 .col {
-  @apply max-w-[540px];
+  @apply xl:max-w-[540px] lg:max-w-[440px];
 }
 .home-hero-row p {
   @apply max-w-[445px] my-10;
 }
 .bg-container {
-  @apply absolute bottom-0 right-0 w-full max-w-xl aspect-[1/1.42] pointer-events-none;
+  @apply lg:absolute bottom-0 right-0 w-full lg:max-w-xl aspect-[1/1.42] pointer-events-none bg-[center_145px];
   background-image: url('../../assets/home/desktop/image-hero-phone.png');
-  background-position-y: 145px;
 }
 </style>

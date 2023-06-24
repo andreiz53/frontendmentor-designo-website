@@ -31,7 +31,7 @@
 
 <style scoped>
 .header-container {
-  @apply py-16 max-w-m mx-auto flex items-center gap-4 justify-between;
+  @apply py-16 px-6 max-w-m mx-auto flex items-center gap-4 justify-between;
 }
 .header-logo {
   @apply w-full max-w-[202px];

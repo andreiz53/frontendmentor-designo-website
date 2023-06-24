@@ -73,7 +73,7 @@ const features = [
 .app-design-hero,
 .app-design-features,
 .app-design-services {
-  @apply pb-40 relative;
+  @apply pb-40 relative px-6;
 }
 
 .app-design-hero::before {

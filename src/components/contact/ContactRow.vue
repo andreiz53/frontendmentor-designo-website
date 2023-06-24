@@ -21,7 +21,7 @@ import ContactForm from './ContactForm.vue';
 
 <style scoped>
 .row {
-  @apply max-w-m w-full mx-auto bg-primary rounded-2xl py-14 px-24 text-white grid grid-cols-[1.7fr_1fr] gap-8 items-center relative overflow-hidden;
+  @apply max-w-m w-full mx-auto bg-primary rounded-2xl py-14 px-24 text-white grid grid-cols-[1.5fr_1fr] gap-8 items-center relative overflow-hidden;
 }
 .row::before {
   content: '';

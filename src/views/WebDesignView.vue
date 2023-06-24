@@ -80,7 +80,7 @@ const features = [
 .web-design-hero,
 .web-design-features,
 .web-design-services {
-  @apply pb-40 relative;
+  @apply pb-40 relative px-6;
 }
 
 .web-design-hero::before {

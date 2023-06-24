@@ -103,10 +103,10 @@ footer {
   @apply isolate;
 }
 .cta-section {
-  @apply z-20 relative;
+  @apply z-20 relative px-6;
 }
 .footer-section {
-  @apply z-10 relative;
+  @apply z-10 relative px-6;
 }
 .cta-row {
   @apply bg-primary rounded-2xl text-white pt-16 pb-11 max-w-m mx-auto px-20 flex items-center gap-8 justify-between -mb-16;
