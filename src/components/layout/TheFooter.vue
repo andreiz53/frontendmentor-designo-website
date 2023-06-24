@@ -25,7 +25,7 @@ import IconInstagram from '../icons/IconInstagram.vue';
     <section class="footer-section">
       <div class="footer-main-row">
         <div class="left-col">
-          <router-link to="/">
+          <router-link to="/" class="footer-logo-wrapper">
             <img
               src="../../assets/shared/desktop/logo-light.png"
               alt="logo light"
@@ -99,49 +99,52 @@ import IconInstagram from '../icons/IconInstagram.vue';
 </template>
 
 <style scoped>
+/* General settings */
 footer {
   @apply isolate;
 }
 .cta-section {
   @apply z-20 relative px-6;
 }
+.cta-row {
+  @apply bg-primary rounded-2xl text-white max-w-m mx-auto -mb-16 bg-no-repeat bg-[40%_center] text-center py-16 px-6;
+  background-image: url('../../assets/shared/desktop/bg-pattern-call-to-action.svg');
+}
 .footer-section {
   @apply z-10 relative px-6;
 }
-.cta-row {
-  @apply bg-primary rounded-2xl text-white pt-16 pb-11 max-w-m mx-auto px-20 flex items-center gap-8 justify-between -mb-16;
-  background-image: url('../../assets/shared/desktop/bg-pattern-call-to-action.svg');
-  background-size: 80%;
-  background-position: right;
-  background-repeat: no-repeat;
-}
 .cta-row h2 {
-  @apply max-w-[270px] mb-5 tracking-normal;
+  @apply mb-2  tracking-normal max-w-[270px] mx-auto;
 }
 .cta-row p {
-  @apply max-w-[460px];
+  @apply max-w-[460px] mx-auto mb-8;
 }
 .footer-section {
-  @apply bg-black text-white pb-20 pt-36;
+  @apply bg-black text-white pt-32 pb-16;
 }
 .footer-main-row {
-  @apply max-w-m mx-auto flex items-center justify-between gap-4 pb-10 border-b border-solid border-white border-opacity-10;
+  @apply pb-10;
 }
+.footer-logo-wrapper {
+  @apply block border-b border-solid border-white border-opacity-10 mb-8;
+}
+
 .footer-logo {
-  @apply w-full max-w-[202px];
+  @apply w-full max-w-[202px] mx-auto pb-8;
 }
 .footer-pages {
-  @apply flex items-center gap-10 uppercase text-sm font-normal leading-none;
+  @apply uppercase text-sm font-normal leading-none flex items-center flex-col gap-8;
 }
 .footer-contact-row {
-  @apply max-w-m mx-auto pt-8 grid grid-cols-[350px_350px_1fr] justify-between gap-8;
+  @apply max-w-m mx-auto grid  gap-10  text-center;
 }
 .footer-contact-row p {
   @apply text-opacity-50 text-white;
 }
 .social-col {
-  @apply grid justify-end items-end;
+  @apply grid justify-center items-end;
 }
+
 .social-list {
   @apply flex gap-4 items-center;
 }
@@ -153,5 +156,43 @@ footer {
 }
 .social-list-item:hover svg {
   @apply brightness-125;
+}
+/* Tablet Settings */
+.footer-logo-wrapper {
+  @apply md:border-b-0 md:mb-0;
+}
+.footer-main-row {
+  @apply md:border-b md:border-solid md:border-white md:border-opacity-10 md:max-w-m md:mx-auto md:flex md:items-center md:justify-between md:gap-4;
+}
+.footer-logo {
+  @apply md:pb-0;
+}
+.footer-pages {
+  @apply md:gap-10 md:flex-row;
+}
+.cta-row h2 {
+  @apply md:mb-5;
+}
+.footer-section {
+  @apply md:pb-20;
+}
+.footer-contact-row {
+  @apply md:grid-cols-[225px_225px_1fr] md:gap-3 md:pt-8 md:text-left;
+}
+.social-col {
+  @apply md:justify-end;
+}
+/* Desktop Settings */
+.cta-row {
+  @apply lg:pt-16 lg:pb-11 lg:px-20 lg:flex lg:items-center lg:gap-8 lg:justify-between lg:bg-right lg:bg-[length:80%] lg:text-left;
+}
+.cta-row h2 {
+  @apply lg:ml-0;
+}
+.footer-section {
+  @apply lg:pt-36;
+}
+.footer-contact-row {
+  @apply lg:grid-cols-[350px_350px_1fr] lg:justify-between lg:gap-8;
 }
 </style>

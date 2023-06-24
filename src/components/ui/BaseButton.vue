@@ -10,7 +10,7 @@ defineProps(['theme', 'target', 'anchor']);
 
 <style scoped>
 .button {
-  @apply text-sm font-medium leading-5 tracking-[1px] uppercase  px-4 py-5  rounded-lg duration-300;
+  @apply inline-block text-sm font-medium leading-5 tracking-[1px] uppercase  px-4 py-5  rounded-lg duration-300;
 }
 .white {
   @apply bg-white text-dark;
