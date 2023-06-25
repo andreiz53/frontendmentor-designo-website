@@ -50,12 +50,12 @@ import BaseButton from '../ui/BaseButton.vue';
   @apply lg:px-24 lg:py-36;
 }
 .col {
-  @apply xl:max-w-[540px] lg:max-w-[440px];
+  @apply xl:max-w-[540px] lg:max-w-[440px] lg:text-left lg:pl-0;
 }
 .home-hero-row p {
-  @apply lg:my-10;
+  @apply lg:my-10 lg:ml-0;
 }
 .bg-container {
-  @apply lg:absolute lg:max-w-xl lg:bottom-0 lg:right-0;
+  @apply lg:absolute lg:max-w-xl lg:bottom-0 lg:right-0 lg:bg-auto bg-[center_145px];
 }
 </style>

@@ -25,6 +25,9 @@ import HighlightServiceList from '../components/services/HighlightServiceList.vu
 .home-features-section {
   @apply pb-32 lg:pb-40 relative;
 }
+.home-services-section {
+  @apply px-6;
+}
 .home-hero-section::after {
   @apply content-[''] bg-light absolute w-[70%] aspect-[1.69/1] left-0 top-[40%] -z-10 rounded-tl-[300px] rounded-tr-[300px] rounded-br-[300px];
 }

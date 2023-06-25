@@ -38,12 +38,12 @@ function getUrl(service: string) {
 
 <style scoped>
 .services-row {
-  @apply aspect-[1.81/1] grid grid-cols-2 gap-x-7 relative max-w-m mx-auto;
+  @apply aspect-[1.81/1] grid lg:grid-cols-2 gap-6 lg:gap-x-7 relative max-w-m mx-auto;
 }
 .left-col,
 .right-top,
 .right-bottom {
-  @apply relative rounded-2xl bg-no-repeat bg-cover flex items-center justify-center text-white flex-col uppercase;
+  @apply relative rounded-2xl bg-no-repeat bg-cover flex items-center justify-center text-white flex-col uppercase min-h-[250px] md:min-h-[200px];
 }
 .left-col::before,
 .right-top::before,
@@ -64,15 +64,17 @@ function getUrl(service: string) {
   @apply grid grid-rows-2 gap-y-6;
 }
 .web {
+  @apply bg-bottom;
   background-image: url('../../assets/home/desktop/image-web-design-large.jpg');
 }
 .app {
   background-image: url('../../assets/home/desktop/image-app-design.jpg');
+  @apply md:bg-center;
 }
 .graphic {
   background-image: url('../../assets/home/desktop/image-graphic-design.jpg');
 }
 h2 {
-  @apply z-10 mb-6;
+  @apply z-10 mb-3 md:mb-6;
 }
 </style>

@@ -17,7 +17,7 @@ h1 {
   @apply text-3xl md:text-5xl font-medium leading-none;
 }
 h2 {
-  @apply text-[40px] font-medium leading-tight tracking-[2px];
+  @apply text-[28px] leading-7 tracking-[1.4px] font-medium md:leading-tight md:tracking-[2px] md:text-[40px];
 }
 h3 {
   @apply text-xl font-medium leading-tight tracking-[5px];
