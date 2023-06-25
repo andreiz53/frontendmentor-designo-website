@@ -14,7 +14,7 @@
   @apply font-jost;
 }
 h1 {
-  @apply text-5xl font-medium leading-none;
+  @apply text-3xl md:text-5xl font-medium leading-none;
 }
 h2 {
   @apply text-[40px] font-medium leading-tight tracking-[2px];

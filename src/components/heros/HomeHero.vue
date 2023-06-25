@@ -18,21 +18,44 @@ import BaseButton from '../ui/BaseButton.vue';
 </template>
 
 <style scoped>
+/* General settings */
 .home-hero-row {
-  @apply bg-primary rounded-2xl max-w-m mx-auto text-white px-5 pt-8 lg:px-24 lg:py-36 relative;
+  @apply bg-primary max-w-m mx-auto text-white pt-20  relative;
   background-image: url('../../assets/home/desktop/bg-pattern-hero-home.svg');
   background-position: right center;
   background-size: 57% 100%;
   background-repeat: no-repeat;
 }
 .col {
+  @apply text-center px-6;
+}
+.home-hero-row p {
+  @apply max-w-[445px] mx-auto mt-3 mb-6;
+}
+
+.bg-container {
+  @apply w-full  aspect-[1/1.46] pointer-events-none bg-[length:150%] bg-[center_top] -mt-[20%];
+  background-image: url('../../assets/home/desktop/image-hero-phone.png');
+}
+
+/* Tablet settings */
+.home-hero-row {
+  @apply md:rounded-2xl md:pt-16;
+}
+.bg-container {
+  @apply md:max-w-[450px] md:mx-auto md:-mt-[15%];
+}
+/* Desktop settings */
+.home-hero-row {
+  @apply lg:px-24 lg:py-36;
+}
+.col {
   @apply xl:max-w-[540px] lg:max-w-[440px];
 }
 .home-hero-row p {
-  @apply max-w-[445px] my-10;
+  @apply lg:my-10;
 }
 .bg-container {
-  @apply lg:absolute bottom-0 right-0 w-full lg:max-w-xl aspect-[1/1.42] pointer-events-none bg-[center_145px];
-  background-image: url('../../assets/home/desktop/image-hero-phone.png');
+  @apply lg:absolute lg:max-w-xl lg:bottom-0 lg:right-0;
 }
 </style>
