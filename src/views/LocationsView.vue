@@ -80,9 +80,12 @@ import LocationSingle from '../components/locations/LocationSingle.vue';
 
 <style scoped>
 .locations-section {
-  @apply grid gap-8 pb-40 px-6;
+  @apply grid gap-8 md:gap-32 lg:gap-8 pb-32 lg:pb-40 md:px-10;
 }
 .title {
-  @apply text-primary;
+  @apply text-primary text-center lg:text-left;
+}
+img {
+  @apply w-full max-h-80 object-cover;
 }
 </style>

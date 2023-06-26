@@ -84,6 +84,9 @@ import LocationsRow from '../components/locations/LocationsRow.vue';
 </template>
 
 <style scoped>
+.about-deal-section {
+  @apply pb-32;
+}
 .about-hero-section,
 .about-talent-section,
 .about-locations-section,

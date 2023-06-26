@@ -27,31 +27,38 @@ defineProps(['reversed']);
 
 <style scoped>
 .row {
-  @apply w-full max-w-m mx-auto grid grid-cols-[1fr_350px] gap-8;
+  @apply w-full max-w-m mx-auto grid lg:grid-cols-[1fr_350px] md:gap-8;
 }
 .text-col {
-  @apply bg-primary-lighter rounded-2xl flex items-center;
+  @apply bg-primary-lighter md:rounded-2xl flex items-center;
 }
 .map-col {
-  @apply rounded-2xl overflow-hidden;
+  @apply md:rounded-2xl overflow-hidden;
 }
 .col-wrapper {
-  @apply max-w-lg mx-auto w-full;
+  @apply lg:max-w-lg mx-auto w-full py-20 lg:py-0;
 }
 .title {
   @apply mb-8;
 }
 .info {
-  @apply flex;
+  @apply flex flex-col lg:flex-row gap-6;
+}
+.address,
+.contact {
+  @apply text-center lg:text-left;
 }
 .contact {
   @apply mx-auto;
 }
 .row.reversed {
-  @apply grid-cols-[350px_1fr];
+  @apply lg:grid-cols-[350px_1fr];
+}
+.row:not(.reversed) .map-col {
+  @apply -order-1 lg:order-1;
 }
 .row.reversed .map-col {
-  order: -1;
+  @apply -order-1;
 }
 .text-col {
   background-image: url('../../assets/shared/desktop/bg-pattern-two-circles.svg');

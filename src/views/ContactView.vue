@@ -15,7 +15,7 @@ import ContactRow from '../components/contact/ContactRow.vue';
 <style scoped>
 .contact-form-section,
 .contact-locations-section {
-  @apply mb-40 relative px-6;
+  @apply mb-40 relative md:px-10;
 }
 .contact-locations-section::after {
   @apply bg-light -z-10 rounded-[300px] rounded-bl-none;
