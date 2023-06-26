@@ -9,7 +9,11 @@ import TheFooter from './components/layout/TheFooter.vue';
       <TheHeader />
     </div>
     <div id="main">
-      <router-view></router-view>
+      <router-view v-slot="{ Component }">
+        <transition name="fade">
+          <component :is="Component" />
+        </transition>
+      </router-view>
     </div>
     <div id="footer">
       <TheFooter />
@@ -23,5 +27,17 @@ import TheFooter from './components/layout/TheFooter.vue';
 }
 #header {
   @apply relative z-50;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease-in-out;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+.fade-enter-to,
+.fade-leave-from {
+  opacity: 1;
 }
 </style>
