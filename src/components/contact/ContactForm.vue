@@ -57,7 +57,7 @@ textarea.formkit-input {
 }
 .formkit-input[type='submit'] {
   @apply text-dark bg-white rounded-lg text-base font-medium leading-5 tracking-[1px] 
-  py-4 px-12 uppercase mt-6 block ml-auto duration-300;
+  py-4 px-12 uppercase mt-6 block mx-auto lg:ml-auto lg:mr-0 duration-300;
 }
 .formkit-input[type='submit']:hover {
   @apply bg-primary-light text-white;

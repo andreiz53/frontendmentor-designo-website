@@ -15,10 +15,10 @@ import ContactRow from '../components/contact/ContactRow.vue';
 <style scoped>
 .contact-form-section,
 .contact-locations-section {
-  @apply mb-40 relative md:px-10;
+  @apply mb-32 lg:mb-40 relative md:px-10;
 }
 .contact-locations-section::after {
-  @apply bg-light -z-10 rounded-[300px] rounded-bl-none;
+  @apply lg:bg-light -z-10 rounded-[300px] rounded-bl-none;
   content: '';
   position: absolute;
   top: 90px;

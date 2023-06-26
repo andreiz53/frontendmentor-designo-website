@@ -21,24 +21,16 @@ import ContactForm from './ContactForm.vue';
 
 <style scoped>
 .row {
-  @apply max-w-m w-full mx-auto bg-primary rounded-2xl py-14 px-24 text-white grid grid-cols-[1.5fr_1fr] gap-8 items-center relative overflow-hidden;
+  @apply max-w-m w-full mx-auto bg-primary md:rounded-2xl py-20 lg:py-14 px-6 md:px-16 lg:px-24 text-white grid lg:grid-cols-[1.5fr_1fr] gap-8 items-center relative overflow-hidden text-center md:text-left;
 }
 .row::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 60%;
-  aspect-ratio: 1;
+  @apply content-[''] absolute bottom-0 left-0 w-[60%] aspect-square opacity-30 rounded-full mix-blend-normal;
   background: linear-gradient(
     90deg,
     rgba(93, 2, 2, 0.0001) 0%,
     rgba(93, 2, 2, 0.497569) 100%
   );
-  mix-blend-mode: normal;
-  opacity: 0.31;
   transform: matrix(0, 1, 1, 0, 0, 0);
-  border-radius: 100%;
 }
 .row > div {
   @apply z-10;

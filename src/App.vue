@@ -21,4 +21,7 @@ import TheFooter from './components/layout/TheFooter.vue';
 #page-container {
   @apply overflow-hidden;
 }
+#header {
+  @apply relative z-50;
+}
 </style>
