@@ -88,9 +88,18 @@ import LocationsRow from '../components/locations/LocationsRow.vue';
 .about-talent-section,
 .about-locations-section,
 .about-deal-section {
-  @apply pb-40 px-6;
+  @apply md:pb-32 lg:pb-40 md:px-10;
 }
 .full-image {
-  @apply h-full object-cover;
+  @apply h-80 w-full object-center lg:h-full object-cover;
+}
+.about-talent-section .full-image {
+  @apply object-bottom md:object-[100%_70%];
+}
+.about-locations-section {
+  @apply py-32;
+}
+.about-hero-section .full-image {
+  @apply md:object-[100%_75%];
 }
 </style>

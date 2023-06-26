@@ -15,16 +15,19 @@ defineProps(['theme', 'reversed']);
 
 <style scoped>
 .row {
-  @apply max-w-m mx-auto rounded-2xl grid grid-cols-[1.33fr_1fr] overflow-hidden;
+  @apply max-w-m mx-auto md:rounded-2xl grid lg:grid-cols-[1.33fr_1fr] overflow-hidden;
+}
+.row:not(.reversed) .image-col {
+  @apply -order-1 lg:order-1;
 }
 .row.reversed {
-  @apply grid-cols-[1fr_1.33fr];
+  @apply lg:grid-cols-[1fr_1.33fr];
 }
 .row.reversed .image-col {
-  order: -1;
+  @apply -order-1;
 }
 .text-col {
-  @apply py-36 px-24 relative;
+  @apply px-6 py-20 text-center lg:text-left lg:py-36 lg:px-24 relative overflow-hidden;
 }
 .primary {
   @apply bg-primary text-white;
