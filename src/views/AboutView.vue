@@ -97,7 +97,7 @@ import LocationsRow from '../components/locations/LocationsRow.vue';
   @apply object-bottom md:object-[100%_70%];
 }
 .about-locations-section {
-  @apply py-32;
+  @apply py-32 md:pt-0;
 }
 .about-hero-section .full-image {
   @apply md:object-[100%_75%];
