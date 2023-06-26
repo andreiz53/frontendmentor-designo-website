@@ -6,6 +6,6 @@
 
 <style scoped>
 .row {
-  @apply max-w-m mx-auto grid grid-cols-3 gap-7;
+  @apply max-w-m mx-auto grid lg:grid-cols-3 gap-7 px-6 md:px-0;
 }
 </style>

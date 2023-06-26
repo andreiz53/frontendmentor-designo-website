@@ -16,7 +16,7 @@ defineProps(['title', 'description', 'image']);
 
 <style scoped>
 .card {
-  @apply bg-primary-lighter rounded-2xl overflow-hidden duration-300;
+  @apply bg-primary-lighter rounded-2xl overflow-hidden duration-300 md:grid md:grid-cols-2 md:items-center lg:grid-cols-1;
 }
 .card:hover {
   @apply bg-primary;

@@ -73,10 +73,10 @@ const features = [
 .app-design-hero,
 .app-design-features,
 .app-design-services {
-  @apply pb-40 relative px-6;
+  @apply pb-32 lg:pb-40 relative md:px-10;
 }
 
 .app-design-hero::before {
-  @apply content-[''] absolute left-0 top-1/2 w-[70%] aspect-[1.69/1] bg-light -z-10 rounded-tl-[300px] rounded-tr-[300px] rounded-br-[300px];
+  @apply content-[''] absolute left-0 top-1/2 w-[70%] aspect-[1.69/1] lg:bg-light -z-10 rounded-tl-[300px] rounded-tr-[300px] rounded-br-[300px];
 }
 </style>
