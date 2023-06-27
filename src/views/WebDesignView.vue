@@ -43,36 +43,38 @@ const features = [
 ];
 </script>
 <template>
-  <div class="web-design-hero">
-    <DefaultHero
-      title="Web Design"
-      description="We build websites that serve as powerful marketing tools and bring memorable brand experiences."
-    />
-  </div>
-  <div class="web-design-features">
-    <CardFeatureRow>
-      <CardFeature
-        v-for="feature in features"
-        :key="feature.title"
-        :title="feature.title"
-        :description="feature.description"
-        :image="feature.image"
+  <div>
+    <div class="web-design-hero">
+      <DefaultHero
+        title="Web Design"
+        description="We build websites that serve as powerful marketing tools and bring memorable brand experiences."
       />
-    </CardFeatureRow>
-  </div>
-  <div class="web-design-services">
-    <SimilarServicesRow>
-      <SingleService
-        title="App Design"
-        target="app-design"
-        image="/src/assets/home/desktop/image-app-design.jpg"
-      />
-      <SingleService
-        title="Graphic Design"
-        target="graphic-design"
-        image="/src/assets/home/desktop/image-graphic-design.jpg"
-      />
-    </SimilarServicesRow>
+    </div>
+    <div class="web-design-features">
+      <CardFeatureRow>
+        <CardFeature
+          v-for="feature in features"
+          :key="feature.title"
+          :title="feature.title"
+          :description="feature.description"
+          :image="feature.image"
+        />
+      </CardFeatureRow>
+    </div>
+    <div class="web-design-services">
+      <SimilarServicesRow>
+        <SingleService
+          title="App Design"
+          target="app-design"
+          image="/src/assets/home/desktop/image-app-design.jpg"
+        />
+        <SingleService
+          title="Graphic Design"
+          target="graphic-design"
+          image="/src/assets/home/desktop/image-graphic-design.jpg"
+        />
+      </SimilarServicesRow>
+    </div>
   </div>
 </template>
 

@@ -36,36 +36,38 @@ const features = [
 ];
 </script>
 <template>
-  <div class="app-design-hero">
-    <DefaultHero
-      title="App Design"
-      description="Our mobile designs bring intuitive digital solutions to your customers right at their fingertips."
-    />
-  </div>
-  <div class="app-design-features">
-    <CardFeatureRow>
-      <CardFeature
-        v-for="feature in features"
-        :key="feature.title"
-        :title="feature.title"
-        :description="feature.description"
-        :image="feature.image"
+  <div>
+    <div class="app-design-hero">
+      <DefaultHero
+        title="App Design"
+        description="Our mobile designs bring intuitive digital solutions to your customers right at their fingertips."
       />
-    </CardFeatureRow>
-  </div>
-  <div class="app-design-services">
-    <SimilarServicesRow>
-      <SingleService
-        title="Web Design"
-        target="web-design"
-        image="/src/assets/home/desktop/image-web-design-small.jpg"
-      />
-      <SingleService
-        title="Graphic Design"
-        target="graphic-design"
-        image="/src/assets/home/desktop/image-graphic-design.jpg"
-      />
-    </SimilarServicesRow>
+    </div>
+    <div class="app-design-features">
+      <CardFeatureRow>
+        <CardFeature
+          v-for="feature in features"
+          :key="feature.title"
+          :title="feature.title"
+          :description="feature.description"
+          :image="feature.image"
+        />
+      </CardFeatureRow>
+    </div>
+    <div class="app-design-services">
+      <SimilarServicesRow>
+        <SingleService
+          title="Web Design"
+          target="web-design"
+          image="/src/assets/home/desktop/image-web-design-small.jpg"
+        />
+        <SingleService
+          title="Graphic Design"
+          target="graphic-design"
+          image="/src/assets/home/desktop/image-graphic-design.jpg"
+        />
+      </SimilarServicesRow>
+    </div>
   </div>
 </template>
 

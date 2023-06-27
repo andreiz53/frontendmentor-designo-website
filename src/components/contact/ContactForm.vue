@@ -1,8 +1,36 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from 'vue';
+
+const isSubmitted = ref(false);
+const name = ref('');
+const email = ref('');
+const phone = ref('');
+const message = ref('');
+const handleSubmit = (values: any) => {
+  name.value = values.name;
+  email.value = values.email;
+  phone.value = values.phone;
+  message.value = values.message;
+
+  isSubmitted.value = true;
+};
+</script>
 
 <template>
-  <div class="form-wrapper">
-    <FormKit type="form" submit-label="Submit">
+  <div v-if="isSubmitted" class="form-success-wrapper">
+    <h2>Thank you!</h2>
+    <p class="my-3">
+      The form has been completed successfully with the following info:
+    </p>
+    <ul class="border-solid border-2 border-white px-2 py-2 rounded">
+      <li><b>Name:</b> {{ name }}</li>
+      <li><b>Phone:</b> {{ phone }}</li>
+      <li><b>Email:</b> {{ email }}</li>
+      <li><b>Message:</b> {{ message }}</li>
+    </ul>
+  </div>
+  <div v-else class="form-wrapper">
+    <FormKit type="form" submit-label="Submit" @submit="handleSubmit">
       <FormKit
         type="text"
         placeholder="Name"
@@ -74,10 +102,10 @@ textarea.formkit-input {
 .formkit-outer {
   @apply relative;
 }
-.formkit-messages {
+.formkit-outer .formkit-messages {
   @apply absolute right-0 top-0 h-full flex items-center;
 }
-.formkit-message::after {
+.formkit-outer .formkit-message::after {
   @apply content-['!'] font-bold w-4 aspect-square bg-white text-primary flex justify-center items-center rounded-full leading-none;
 }
 </style>

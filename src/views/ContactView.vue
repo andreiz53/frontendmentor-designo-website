@@ -4,11 +4,13 @@ import ContactRow from '../components/contact/ContactRow.vue';
 </script>
 
 <template>
-  <div class="contact-form-section">
-    <ContactRow />
-  </div>
-  <div class="contact-locations-section">
-    <LocationsRow />
+  <div>
+    <div class="contact-form-section">
+      <ContactRow />
+    </div>
+    <div class="contact-locations-section">
+      <LocationsRow />
+    </div>
   </div>
 </template>
 
